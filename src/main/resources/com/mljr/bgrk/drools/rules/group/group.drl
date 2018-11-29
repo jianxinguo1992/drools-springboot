@@ -1,0 +1,29 @@
+package com.jxguo.drools
+
+
+rule "Group 1"
+    agenda-group "group1"
+    lock-on-active
+
+    when
+    then
+        System.out.println("Group 1");
+end
+
+rule "Group 2"
+    agenda-group "group2"
+    lock-on-active
+
+    when
+    then
+        System.out.println("Group 2");
+end
+
+rule "Group 3"
+    agenda-group "group2"
+    lock-on-active
+
+    when
+    then
+        System.out.println("Group 3");
+end
